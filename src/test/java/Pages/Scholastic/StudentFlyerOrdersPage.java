@@ -17,7 +17,7 @@ public class StudentFlyerOrdersPage extends BasePage {
     By ErrorMessageOrderLoc = By.id("error-message-tooltip");
 
     By StudentNameAfterAddedLoc = By.xpath("//td[@class=' studentName']");
-    //By ItemsAfterAddedLoc = By.xpath("//td[@class=' itemNum details-control']");
+
     By ItemOneLoc = By.xpath("//a[text()='35J3']");
     By ItemTwoLoc = By.xpath("//a[text()='16B3']");
     By ItemThreeJohnLoc = By.xpath("//a[text()='35S3']");
@@ -25,7 +25,7 @@ public class StudentFlyerOrdersPage extends BasePage {
     By ItemQtyOneLoc = By.xpath("/html[1]/body[1]/div[1]/div[4]/div[10]/div[2]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[8]/input[1]");
     By ItemQtyTwoLoc = By.xpath("/html[1]/body[1]/div[1]/div[4]/div[10]/div[2]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[2]/td[8]/input[1]");
     By ReviewCartLoc = By.xpath("//button[@class='secondary']");
-    //By ItemsBeforeRevLoc = By.xpath("//input[@class='input-qty numericenteronly']");
+
 
     By ItemQtyThreeMichaelLoc = By.xpath("/html[1]/body[1]/div[1]/div[4]/div[10]/div[2]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[8]/input[1]");
     By ItemQtyFourJohnLoc = By.xpath("/html[1]/body[1]/div[1]/div[4]/div[10]/div[2]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[2]/td[8]/input[1]");
@@ -225,10 +225,7 @@ public class StudentFlyerOrdersPage extends BasePage {
     }
 
 
-    public void clickTeacherOrderEnterItem() {
 
-        clickThis(TeacherOrderEnterItemLoc);
-    }
 
 
 

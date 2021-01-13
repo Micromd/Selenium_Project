@@ -53,8 +53,6 @@ public class CreateAcc extends BasePage {
 
 
 
-    //Methods
-
     public void selectTeacherAcc () {
         clickThis(clickOnTeacherLoc);
 
@@ -72,20 +70,6 @@ public class CreateAcc extends BasePage {
 
     }
 
-    //public void selectTitle (String data) {
-
-    //String TitleToSelect = "Mr.";
-//
-    //List<WebElement> titles = Web.getDriver().findElements(TitleLoc);
-
-    // for (WebElement title: titles) {
-    //    if (title.getText().equalsIgnoreCase(TitleToSelect)) {
-    //       title.click();
-    //  break;
-
-    // Method didn't work with the Select process.
-
-    //} } }
 
     public void EnterFirstName (String data) {
         type(FirstNameLoc, data);
@@ -132,23 +116,6 @@ public class CreateAcc extends BasePage {
 
         type(MySchoolNameLoc, data);
         clickThis(ScholasticBookClubLoc);
-
-
-
-
-
-        //WebElement ScholasticBookClub = findElementUsingFluentWait(ScholasticBookClubLoc);
-        //String ScholasticBookClubText = ScholasticBookClub.getText();
-
-        //List<WebElement> schools = Web.getDriver().findElements(MySchoolNameLoc);
-
-        //for (WebElement school : schools) {
-        //if (school.getText().equalsIgnoreCase(ScholasticBookClubText)) {
-        //school.click();
-        //  break;
-
-        //}   //This way of process didn't work either.
-        //}
 
 
     }

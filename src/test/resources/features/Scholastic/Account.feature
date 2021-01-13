@@ -32,7 +32,7 @@ Feature: Account
 
 
 
-  @TestCase-2  @sanity
+  @TestCase-2 
   Scenario: User can create a new teacher account in taxable state using School Search
     And I click on create an account
     And I select as Teacher
@@ -63,7 +63,7 @@ Feature: Account
 
 
 
-  @TestCase-4  @sanity
+  @TestCase-4
   Scenario: User can create a new teacher account in non-taxable state using Zip Code
     And I click on create an account
     And I select as Teacher

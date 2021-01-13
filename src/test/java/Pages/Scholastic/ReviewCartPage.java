@@ -12,7 +12,6 @@ public class ReviewCartPage extends BasePage {
 
     //Locators
     By ItemOneAfterReviewLoc = By.xpath("//a[@class='truncate' and contains(text(), 'Dream Big')]");
-    //By ItemTwoAfterReviewLoc = By.xpath("//a[text()='35J3']");
     By ItemOneQtyAfterReviewLoc = By.xpath("//input[@name='dwfrm_cart_shipments_i0_items_i0_quantity']");
     By ItemTwoQtyAfterReviewLoc = By.xpath("//input[@name='dwfrm_cart_shipments_i0_items_i1_quantity']");
     By ItemOnePriceAfterReview = By.xpath("//span[@class='value' and contains(text(), '$9.00')]");
@@ -40,21 +39,6 @@ public class ReviewCartPage extends BasePage {
 
     //Methods
 
-    //public String ItemOneVerify () {
-
-    //WebElement ItemOneAfterRELEM = findElementUsingFluentWait(ItemOneAfterReviewLoc);
-    //return ItemOneAfterRELEM.getText();
-
-
-    //}
-
-
-    //public String ItemTwoVerify () {
-
-    //WebElement ItemTwoAfterRELEM = findElementUsingFluentWait(ItemTwoAfterReviewLoc);
-    //return ItemTwoAfterRELEM.getText();
-
-    //}
 
 
     public String ItemOneQtyVerify() {

@@ -2,7 +2,7 @@ package Pages.Scholastic;
 
 import DriverWrapper.Web;
 import Pages.BasePage;
-import cucumber.api.java.en.And;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;

@@ -66,7 +66,7 @@ public class StartCheckOutPage extends BasePage {
         clickThis(PaymentMethodDropDownLocClick);
         sleep();
         clickThis(ClickCreditCardLoc);
-        //selectFromDropdownUsingVisibleText(PaymentMethodDropDownLoc, "Credit Card");
+
 
     }
 
@@ -77,7 +77,7 @@ public class StartCheckOutPage extends BasePage {
         sleep();
         clickThis(ClickAddANewCardLoc);
 
-        //selectFromDropdownUsingVisibleText(CardTypeDropDownLoc, "Add a New Card");
+
     }
 
 

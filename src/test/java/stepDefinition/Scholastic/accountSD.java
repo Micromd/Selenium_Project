@@ -156,14 +156,7 @@ public class accountSD {
         CaPage.PullTheOnScreenPopUp();
     }
 
-    //@And("^I click on My Account and Profile$")
-    //public void clickingMyAccountAndProfile () {
 
-    // CaPage.sleepTime();
-    //  String classCodeTxtAFC = AfcPage.getClassCodeText();
-    //AfcPage.clickMyAccountAndProfile();
-
-    // }
 
 
 

@@ -5,7 +5,7 @@ import Pages.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
 
 public class MyReadingClubAccPage extends BasePage {
 
@@ -30,11 +30,7 @@ public class MyReadingClubAccPage extends BasePage {
 
 
     By ClickAddACreditCardLoc = By.xpath("//a[@class='reading-club add-creditcardtoaccount']");
-    By SendKeysCardNumberLoc = By.xpath("/html[1]/body[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[5]/form[1]/fieldset[1]/div[1]/div[3]/input[1]");
-    // had to use absolute xPath for Card Number Box, I have tried and exhausted all the other locators possible; it can't find the element
-    // even though clearly using just the ID shows there's only one element which is the Card Number Box, but fails to locate during Automation Test
-    // It appears to be a bug with the locator of the card number box, every other box works smoothly.
-    // Potential Bug: cannot locate element when Automation Test is being executed
+    By SendKeysCardNumberLoc = By.xpath("//li[@class='custom-option CREDIT_CARD']/span");
     By ClickCCMonthLoc = By.xpath("//div[text()='Month']");
     By ClickCardMonthLoc = By.xpath("//li[@data-label='03']");
     By ClickCCYearLoc = By.xpath("//div[text()='Year']");
@@ -50,9 +46,6 @@ public class MyReadingClubAccPage extends BasePage {
     By ErrorMDisplayedLoc = By.xpath("//div[@class='tooltipster-body']");
 
 
-    //By SelectMonthLoc = By.id("dwfrm_paymentinstruments_creditcards_newcreditcard_month");
-    //By SelectYearLoc = By.id("dwfrm_paymentinstruments_creditcards_newcreditcard_year");
-    //Select is not working, tried numerous ways. Unable to identify the reason, possible bug.
 
 
 
@@ -83,12 +76,7 @@ public class MyReadingClubAccPage extends BasePage {
         return true;
 
 
-        //WebElement FirstNameElem = findElementUsingFluentWait(FirstNameLoc);
-        //String FirstNameText = FirstNameElem.getText();
-        //WebElement LastNameElem = findElementUsingFluentWait(LastNameLoc);
-        //String LastNameText = LastNameElem.getText();
-        //WebElement TitleName = findElementUsingFluentWait(TitleLoc);
-        //String TitleG = TitleName.getText();
+
 
     }
 
@@ -184,10 +172,7 @@ public class MyReadingClubAccPage extends BasePage {
 
     public void EnterCreditCardNo (String data) {
 
-        //Actions act = new Actions(Web.getDriver());
-        //WebElement CardElem = findElementUsingFluentWait(SendKeysCardNumberLoc);
-        //act.moveToElement(CardElem).build().perform();
-        //CardElem.click();
+
         clickThis(SendKeysCardNumberLoc);
         sleep();
         type(SendKeysCardNumberLoc, data);
@@ -207,7 +192,6 @@ public class MyReadingClubAccPage extends BasePage {
 
         clickThis(ClickCCYearLoc);
         clickThis(ClickCardYearLoc);
-        //selectFromDropdownUsingVisibleText(SelectYearLoc, data);
 
     }
 
